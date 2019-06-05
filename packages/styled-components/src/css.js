@@ -5,7 +5,7 @@ import { propGetters } from './propGetters'
 const PROP_REGEXP = /(\s*)([^&{}:;\n]+):\s*([^&{}:;\n]+)(\s*);/g
 const IMPORTANT_REGEXP = /\s*!important\s*/
 
-function transform(rawValue) {
+export function transform(rawValue) {
   if (typeof rawValue !== 'string') return rawValue
   let matches
   let lastIndex = 0
